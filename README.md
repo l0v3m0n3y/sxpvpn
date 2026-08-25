@@ -7,7 +7,7 @@ import sxpvpn
 let client = Sxpvpn()
 
 do {
-    let servers = try await client.get_servers_list()
+    let servers = try await client.getServersList()
     print(servers)
 } catch {
     print("Error: \(error)")
